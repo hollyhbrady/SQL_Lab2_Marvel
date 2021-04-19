@@ -226,3 +226,9 @@ marvel=# SELECT show_time FROM movies WHERE title = 'Iron Man 3';
 ## Extension
 
 1.  Research how to delete multiple entries from your table in a single command.
+marvel=# DELETE FROM movies WHERE year = 2018;
+DELETE 2
+marvel=# DELETE FROM movies WHERE year IN (2011, 2012);
+DELETE 3
+marvel=# DELETE FROM people WHERE name IN ('Patty Bouvier', 'Selma Bouvier');
+DELETE 2
